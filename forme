@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forme</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Forme</h1>
+<form>
+	<label for="username">Korisnicko ime</label>
+	<input type="text"
+			placeholder="Unesite korisnicko ime"
+			required 
+			minlength="3"
+			maxlength="15"
+			id="username">
+	<label for="password">Lozinka</label>
+	<input type="password"
+			placeholder="Unesite lozinku"
+			required
+			minlength="6"
+			maxlength="20"
+			id="password">
+	<button>Prijavi se</button>
+</form>
+<hr>
+<form>
+	<label for="ime">Ime:</label>
+	<input type="text"
+			placeholder="Unesite svoje ime"
+			required
+			id="ime"><br>
+
+	<label for="prezime">Prezime:</label>
+	<input type="text"
+			placeholder="Unesite svoje prezime"
+			required
+			id="prezime"><br>
+
+	<label for="email">E-mail:</label>
+	<input type="email"
+			placeholder="Unesite svoj e-mail"
+			required
+			id="email"><br>
+
+	<p>Odaberite pol:</p>
+	<label for="pol_m">Muški:</label>
+	<input type="radio"
+			name="pol"
+			value="muski"
+			id="pol_m">
+
+	<label for="pol_z">Ženski:</label>
+	<input type="radio"
+			name="pol"
+			value="zenski"
+			id="pol_z">
+
+	<label for="pol_n">Neizjašnjen:</label>
+	<input type="radio"
+			name="pol"
+			value="neizjasnjen"
+			id="pol_n"
+			checked>
+
+	<p>Odaberite omiljenu boju:</p>
+	<label for="boja_plava">Plava:</label>
+	<input type="checkbox"
+			name="boja[]"
+			value="plava"
+			id="boja_plava"><br>
+
+	<label for="boja_crvena">Crvena:</label>
+	<input type="checkbox"
+			name="boja[]"
+			value="crvena"
+			id="boja_crvena"><br>
+
+	<label for="boja_zelena">Zelena:</label>
+	<input type="checkbox"
+			name="boja[]"
+			value="zelena"
+			id="boja_zelena"><br>
+
+	<label for="datum">Datum:</label>
+	<input type="date"
+			id="datum"><br>
+
+	<label for="komentar">Komentar:</label>
+	<textarea placeholder="Unesite komentar"
+			 id="komentar"></textarea><br>
+
+	<label for="grad">Grad:</label>
+	<select id="grad">
+		<option value="bg">Beograd</option>
+		<option value="ns">Novi Sad</option>
+		<option value="kg" selected>Kragujevac</option>
+		<option value="ni">Niš</option>
+		<option value="kr">Kruševac</option>
+	</select><br>
+
+	<label for="godina_rodjenja">Godina rodjenja:</label>
+	<input type="number" 
+			placeholder="Unesite godinu rođenja"
+			id="godina_rodjenja"
+			min="1900" max="2004"><br>
+
+	<label for="odabir_boje">Odaberite novu boju:</label>
+	<input type="color" id="odabir_boje"><br>
+
+	<input type="submit" value="Potvrdi">
+	<input type="reset">
+
+	<input type="hidden" name="podatak" value="55">
+</form>
+</body>
+</html>
